@@ -560,6 +560,10 @@ body {
     padding-left: 15px;
 }
  
+
+table {
+	color: #94B3CD;
+}
 /*.tablesaw-row-zebra tr:nth-child(2n) {
 	background-color: #f8f8f8;
 }*/
