@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+html {
+    font-size: 100%;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    color: #4c779b;
+    background-color: #324758 !important;
+}
+
+body {
+	color: #4c779b;
+	font: 100% 'Open Sans', sans-serif;
+	background-color: #324758;
+	position: relative;
+	margin: 0;
+	max-width: 1366px;
+	width: 100%;
+	background-color: #324758;
+
+}
+
+
+main {
+	
+    max-width: 1366px;
+    /*margin: 0 80px 0 0px;*/
+    box-sizing: border-box;
+    /*-webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    transform: translateX(15px);*/
+    /*margin-left: 20px;*/
+    margin: 0px 60px 0px;
+    /*left:60px;*/
+
+
+}
+
+article {
+    /*margin: 0 1em;
+    padding: 0 18px;*/
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: : -moz-transform .3s;
+    transition: transform .3s;
+    /*width: 100%;*/
+
+
+}
+
+header {	
+	visibility: hidden;
+	height: 0;
+	align-items: center;
+	text-align: center;
+	background: #6ab1db;
+	margin: 0;
+	width: 100%;
+
+}
+
+header img {
+
+}
+
+
+.head_title h2 {
+	color: #94B3CD;
+}
+
+section {
+	width: 99%;
+
+}
+
+
+/*линия разграничения фильтров*/
+
+.barrier {
+	color: #324758;
+	background-color: #324758;
+	height: 2px;
+	border: none;
+}
+
+ .spoiler_body { 
+ 	display: none; 	
+ 	line-height: 0;
+        font-size: 1px; /* 1px для Opera */
+	text-align: left;
+        /* Лекарство для IE6-7*/
+        text-justify: newspaper;
+        zoom: 1;
+
+        margin: 10px;
+
+        /* Включаем в работу последнюю строку*/
+        /*text-align-last: justify;*/
+ }
+
+ .spoiler_body:after {
+
+ 	 width: 100%;
+     height: 0px;
+     visibility: hidden;
+     overflow: hidden;
+      content: '';
+     display: inline-block;
+ }
+
+ .spoiler_links { 
+ 	cursor: pointer; 
+ 	color: #94B3CD;
+ 	text-decoration: none;
+ 	
+ }
+
+.form-container {
+   border: 0px solid #364d5f;
+   background: #364d5f;
+   
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 11px;
+   
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width: 250px;
+   padding: 20px;
+   width: 100%;
+   text-align: left;
+    
+
+   }
+
+.form-field {
+   border: 0px solid #4c779b;
+   background: #4c779b;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #c5d4e0;
+   padding:8px;
+   margin:10px 0px 20px;
+   width: 30%;
+   min-width: 200px;
+
+   height: 10px;
+
+   }
+
+.form-field:focus {
+   background: #7FA9CD;
+   color: #ffffff;
+
+   }
+
+.form-select {
+	border: 0px solid #4c779b;
+   background: #4c779b;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #c5d4e0;
+   padding:0 8px;
+   margin:10px 0px 20px;
+   width: 30%;
+
+   min-width: 215px;
+   height: 26px;
+   text-align: justify;
+
+  
+}
+
+.form-select::-ms-expand {
+  display: none;
+}
+
+.form-select:before {}
+
+.form-select:after {
+	
+}
+
+
+
+.form-select:hover {
+	/*-webkit-appearance: none;*/
+	border: 0px solid #4c779b;
+   background: #4c779b;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #c5d4e0;
+   padding:0 8px;
+   margin:10px 0px 20px;
+   width: 30%;
+
+   min-width: 215px;
+   height: 26px;
+   text-align: justify;
+	
+	}
+
+.form-container h2 {
+   
+   font-size:18px;
+   margin: 0 0 10px 0;
+   color: #7FA9CD;
+   
+   }
+.form-title {
+   margin-left:10px;
+   font-size: 80%;
+   color: #4c779b;
+   display: inline-block;
+
+   /*width: 30%;*/
+   min-width: 200px;
+   /*float: left;*/	
+
+   text-align: left;
+                    
+
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+   }
+
+
+
+.nav {
+    /*  ширна произвольная, не стесняйтесь экспериментировать */
+    width: 250px;
+    min-width: 250px;
+    /* фиксируем и выставляем высоту панели на максимум */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    /* сдвигаем (прячем) панель относительно левого края страницы */
+    left: -250px;
+    /* внутренние отступы */
+    padding: 20px 20px;
+    /* плавный переход смещения панели */
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    /* определяем цвет фона панели */
+    background: #6ab1db;
+    /* поверх других элементов */
+    z-index: 2000;
+
+}
+ 
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+ 
+.nav-toggle {
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно левого края панели */
+    left: 250px;
+    /* отступ от верхнего края панели */
+    top: 0em;
+    /* внутренние отступы */
+    padding: 4%;
+        
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    background: inherit;
+    /* цвет текста */
+    color: #dadada;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 120%;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+ 
+/* определяем текст кнопки 
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+ 
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+ 
+/* цвет текста при наведении */
+ 
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+ 
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+ 
+[id='nav-toggle'] {
+    position: absolute;
+    display: none;
+}
+ 
+/**
+ * изменение положения переключателя 
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+ 
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+ 
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+ 
+[id='nav-toggle']:checked ~ .nav {
+    left: 0;
+    overflow-y: auto;
+    
+    
+}
+
+/*прокрутка*/
+::-webkit-scrollbar {
+    width: .65em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(217, 217, 217, 0.75);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(170, 170, 170, 0.6);
+    border-radius: 5px;
+    box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
+}
+ 
+/* 
+ * смещение контента страницы
+ * на размер ширины панели,
+ * фишка необязательная, на любителя
+*/
+ 
+[id='nav-toggle']:checked and (min-width: 640px) ~ main > article {
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    transform: translateX(250px);
+
+    margin-right: 250px;
+}
+ 
+/*
+ * изменение символа переключателя,
+ * привычный крестик (MULTIPLICATION X), 
+ * вы можете испльзовать любой другой значок
+*/
+ 
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+    content: '\2715';
+}
+ 
+/**
+ * профиксим баг в Android <= 4.1.2
+ * см: http://timpietrusky.com/advanced-checkbox-hack
+ */
+ 
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+ 
+@-webkit-keyframes bugfix {
+    to {
+      padding: 0;
+    }
+}
+ 
+/**
+ * позаботьтимся о средних и маленьких экранах
+ * мобильных устройств
+ */
+ 
+@media screen and (min-width: 640px) {
+    html,
+    body {/*
+      margin: 0;
+      overflow-x: hidden;*/
+    }
+  
+
+
+}
+ 
+@media screen and (max-width: 640px) {
+    html,
+    body {
+     /* margin: 0;
+      overflow-x: hidden;*/
+    }
+    .nav {
+      left: -290px;
+    }
+
+    .nav-toggle {
+    	left: 290px;
+    }
+
+    main {
+    	margin-left: 20px;
+    }
+
+    header {	
+		visibility: visible;
+		height: 45px;
+		
+		left: -60px;
+		z-index: 1000;
+
+	}
+}
+ 
+/**
+ * Формируем стиль заголовка (логотип) панели 
+*/
+ 
+.nav .logo {
+    width: 95%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+
+}
+ 
+.nav .logo a {
+    color: #ffffff;
+    /*text-decoration: none;
+    text-transform: uppercase;*/
+    font: lighter semi-expanded 80% 'Open Sans';
+    /*display: inline-block;*/
+    
+}
+ 
+
+ .nav .logo div {
+ 	display: inline-block;
+ }
+
+ .nav .logo .logo_text {
+ 	
+ 	width: 100px;
+
+ }
+ 
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+ 
+[id='nav-toggle']:checked ~ .nav .logo {
+    opacity: 1;
+    width: 100%;
+    transform: none;/*scale(1, 1);
+    /*-ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);*/
+}
+ 
+/**
+ * формируем непосредственно само меню
+ * используем неупорядоченный список для пунктов меню
+ * прикрутим трансфомации и плавные переходы
+ */
+ 
+.nav > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.nav > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+ 
+[id='nav-toggle']:checked ~ .nav > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+ 
+
+ 
+/**
+ * оформление ссылок пунктов меню
+ */
+ 
+.nav > ul > li > a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+
+}
+ 
+/**
+ * состояние ссылок меню при наведении
+ */
+ 
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+    color: white;
+    padding-left: 15px;
+}
+ 
+/*.tablesaw-row-zebra tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}*/
+ 
+

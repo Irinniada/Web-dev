@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clients</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,  initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<link rel="stylesheet" href="tablesaw-master/dist/tablesaw.css">
+	<link rel="stylesheet" href="tablesaw-master/demo/demo.css">
+	<link rel="stylesheet" href="//filamentgroup.github.io/demo-head/demohead.css">
+
+	<script>
+	TablesawConfig = {
+		getColumnToggleLabelTemplate: function( text ) {
+			return "<label><input type='checkbox' checked><span>" + text + "</span></label>";
+		}
+	};
+	</script>
+	<script src="/tablesaw-master/dist/tablesaw.js"></script>
+	<script src="/tablesaw-master/dist/tablesaw.js"></script>
+	<script src="/tablesaw-master/dist/tablesaw-init.js"></script>
+	<script src="//filamentgroup.github.io/demo-head/loadfont.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="logo.png">
+	</header>
+				
+			<input type="checkbox" id="nav-toggle" hidden>
+
+			<nav class="nav">
+				<label for="nav-toggle" class="nav-toggle" onclick></label>
+				<div class="logo"> 
+					<a href="">
+						<div><img src="logo.png"></div>
+		            	<div class="logo_text">MORE THAN WRITERS</div>
+	            	 </a>
+		        </div>
+		        <ul>
+		            <li><a href="#1">Один</a></li>
+		            <li><a href="#2">Два</a></li>
+		            <li><a href="#3">Три</a></li>
+		            <li><a href="#4">Четыре</a></li>
+		            <li><a href="#5">Пять</a></li>
+		            <li><a href="#6">Шесть</a></li>
+		            <li><a href="#7">Семь</a> </li>
+		        </ul>
+		    </nav>
+	
+		
+		<main role="main">
+
+			<article>
+			<div class="head_title">
+				<h2>Clients</h2>
+			</div>
+			<section>
+				<form class="form-container">
+					<div class="form-title">
+						<h2>CLIENTS LIST</h2>
+					</div>
+					<hr class="barrier">
+					<a href="" class="spoiler_links">
+						<span>Filter</span>
+					</a>
+					<div class="spoiler_body">
+						<div class="form-title">Company number<br>
+							<input class="form-field" type="text" name="company_number" />
+						</div>
+						<div class="form-title">Company name<br>
+							<input class="form-field" type="text" name="company_name" />
+						</div>
+						<div class="form-title">Industry<br>
+							<select class="form-select">
+								<option>Пункт 1</option>
+  								<option>Пункт 2</option>
+							</select>
+						</div>
+						<div class="form-title">Country<br>
+							<select class="form-select">
+								<option>Пункт 1</option>
+  								<option>Пункт 2</option>
+							</select>
+						</div>
+						<!--<div class="submit-container">
+							<input class="submit-button" type="submit" value="Submit"/>
+						</div>-->
+					</div>
+				</form>
+
+				<hr class="barrier">
+
+				<div class="tablesaw-overflow">
+					<table class="tablesaw tablesaw-stack tablesaw-row-zebra" data-tablesaw-mode="columntoggle">
+
+						<thead>
+	      					<tr>
+	      						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Company number</th>
+	      						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="0">Company name</th>
+	      						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Industry</th>
+	      						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Country</th>
+	      						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">City</th>
+	      					</tr>
+	      				</thead>
+	      				<tbody>
+							<tr>
+								<td>1
+								</td>
+								<td class="title">MainName
+								</td>
+								<td>IT
+								</td>
+								<td>USA
+								</td>
+								<td>New York
+								</td>
+							<tr>
+							<tr>
+								<td>2
+								</td>
+								<td class="title">OldName
+								</td>
+								<td>Baking
+								</td>
+								<td>Ukraine
+								</td>
+								<td>Київ
+								</td>
+							<tr>
+							<tr>
+								<td>3
+								</td>
+								<td class="title">LittleCom
+								</td>
+								<td>Crufting
+								</td>
+								<td>Ukraine
+								</td>
+								<td>Львів
+								</td>
+							<tr>
+							<tr>
+								<td>4
+								</td>
+								<td class="title">NoMore
+								</td>
+								<td>SomeStuff
+								</td>
+								<td>
+								</td>
+								<td>
+								</td>
+							<tr>
+						</tbody>
+					</table>
+				</div>
+			
+			</section>
+				<footer>
+					
+				</footer>
+			</article>
+		</main>
+	
+		<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
